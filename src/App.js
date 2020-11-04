@@ -1,24 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import { Header, Footer, Homepage, About, WWD, Donate, Contact } from './components/common'
+import { Link, Route, Switch} from 'react-router-dom'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'mdbreact/dist/css/mdb.css'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    <main>
+      <Switch>
+        <Route path = '/' component = {Homepage} exact />
+        <Route path = '/about' component = {About} exact />
+        <Route path = '/what_We_Do' component = {WWD} exact />
+        <Route path = '/donate' component = {Donate} exact />
+        <Route path = '/contact' component = {Contact} exact />
+      </Switch>
+    </main>
+
   );
 }
 

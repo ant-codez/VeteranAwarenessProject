@@ -1,0 +1,12 @@
+.vl{
+    border-left: 1px ridge gray;
+    height : 150px
+}
+
+.pre-footer{
+    margin-top : 50px; 
+    font-Size : 21px;
+    text-Align : center;
+    font-family: serif;
+    color : #777777
+}

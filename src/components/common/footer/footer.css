@@ -1,0 +1,20 @@
+.main-footer{
+    color : white;
+    background-color: lightblue;
+    padding-top: 3em;
+    position: relative;
+    bottom : 0;
+    width: 100%
+}
+
+i.fa {
+    width: 50px;
+    height: 40px;
+    font-size: 30px;
+    color: white;
+}
+
+a { 
+    text-decoration: none;
+    color: inherit;
+}

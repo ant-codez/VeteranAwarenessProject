@@ -1,0 +1,51 @@
+.flag-img{
+    background-position: center;
+    background-repeat: no-repeat;
+    background: rgba(76, 175, 80, 0.3);
+}
+
+.vid-container{
+    position: relative;
+    z-index: 0;
+    text-align: center;
+}
+
+.flag {
+    left: 0;
+    top: 0;
+    width: 100%;
+    max-height: 77vh;
+    opacity: 0.5;
+    object-fit: cover;
+}
+
+.flag-text{
+    position: absolute;
+    top : 35%;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.donate-box{
+    position: relative;
+    z-index: 2;
+}
+
+.about-us{
+    width: 500px;
+    height: 500px;
+}
+
+.container-div{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15%;
+}
+
+.army-img{
+    width: 125px;
+    height: 125px;
+    margin: 15px;
+}
