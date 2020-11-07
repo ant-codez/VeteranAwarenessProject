@@ -35,7 +35,7 @@ function Homepage(){
                 </div>
             <Container>
                 <Row className = 'justify-content-md-center'>
-                    <Col xs = {6}>
+                    <Col xs={{span: 12, order: 1}} md = {{span : 6, order : 2}} >
                         <Image
                         src = {oj}
                         className = 'container-div'
@@ -45,7 +45,7 @@ function Homepage(){
                             Enduring Freedom '08 -'09
                         </p>
                     </Col>
-                    <Col xs = {6}>
+                    <Col xs={{span: 12, order: 1}} md = {{span : 6, order : 2}}>
                         <div className = 'container-div'>
                         <h1>You've come To The Right Place</h1>
                         <p>Welcome to The Veterans Awareness Project. From my own experience as a veteran, 
@@ -68,7 +68,7 @@ function Homepage(){
             </Container>
 
             <Container>
-                <Row xs = {12}>
+                <Row xs>
                     <a href = 'https://www.army.mil' target = '_blank'>
                     <Image
                     src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Mark_of_the_United_States_Army.svg/1200px-Mark_of_the_United_States_Army.svg.png'
@@ -117,7 +117,7 @@ function Homepage(){
             <Container>
                 <h1 style = {{textAlign : 'center', marginTop : '15px', marginBottom : '30px', fontSize : '50px'}} >What We Do</h1>
                 <Row style = {{marginTop : '30px', marginBottom : '30px'}}>
-                    <Col>
+                    <Col xs>
                         <Card style = {{width : '18rem'}}>
                             <Card.Body>
                                 <Card.Title>Veteran Advocacy</Card.Title>
@@ -163,9 +163,7 @@ function Homepage(){
                             </Card.Body>
                         </Card>
                     </Col>
-                </Row>
-
-                <Row style = {{marginTop : '30px', marginBottom : '30px'}}>
+                    
                     <Col>
                     <Card style = {{width : '18rem'}}>
                             <Card.Body>

@@ -50,7 +50,7 @@ function WWD() {
 
             <Container id = 'VA' style = {{marginTop : '55px', marginBottom : '55px'}}>
                 <Row>
-                    <Col style = {{textAlign : 'left' , marginRight : '30px'}}>
+                    <Col xs={{span: 12, order: 2}} md = {{span : 6, order : 1}} style = {{textAlign : 'left'}} >
                     <h1>Veteran Advocacy</h1>
                     <p>
                     We advocate for Veteran Rights & Benefits which include working 
@@ -70,10 +70,10 @@ function WWD() {
                     <hr />
                     </Col>
 
-                    <Col>
+                    <Col xs={{span: 12, order: 1}} md = {{span : 6, order : 3}}>
                         <Image 
                         src ={group}
-                        style ={{width : '550px', height : '366px'}} 
+                        fluid
                         />
                     </Col>
                 </Row>
@@ -81,7 +81,7 @@ function WWD() {
 
             <Container id = 'benefits' style = {{marginTop : '55px', marginBottom : '55px'}}>
                 <Row>
-                    <Col style = {{textAlign : 'left' , marginRight : '30px'}}>
+                    <Col xs={{span: 12, order: 2}} md = {{span : 6, order : 1}} style = {{textAlign : 'left'}}>
                     <h1>State And Federal Benefits</h1>
                     <p>
                     We connect Veterans with their Local Benefits & Organizations. 
@@ -97,10 +97,10 @@ function WWD() {
                     <hr />
                     </Col>
 
-                    <Col>
+                    <Col xs={{span: 12, order: 1}} md = {{span : 6, order : 2}}>
                         <Image 
                         src ={flag}
-                        style ={{width : '550px', height : '366px'}} 
+                        fluid
                         />
                     </Col>
                 </Row>
@@ -108,13 +108,13 @@ function WWD() {
 
             <Container style = {{marginTop : '55px', marginBottom : '55px'}}>
                 <Row>
-                <Col>
+                <Col xs={{span: 12, order: 1}} md = {{span : 6, order : 1}}>
                         <Image 
                         src ={woman}
-                        style ={{width : 'auto', height : '512px'}} 
+                        fluid 
                         />
                     </Col>
-                    <Col style = {{textAlign : 'left' , marginRight : '30px'}}>
+                    <Col xs={{span: 12, order: 2}} md = {{span : 6, order : 2}} style = {{textAlign : 'left'}}>
                     <h1>Guiding Veterans Through The Claims Process</h1>
                     <p>
                     We take pride in working one on one with Veterans and their families 

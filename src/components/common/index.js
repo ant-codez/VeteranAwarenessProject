@@ -5,6 +5,7 @@ import Homepage from './homepage'
 import About from './about'
 import Donate from './donate'
 import Contact from './contact'
+import MapContainer from './mapContainer'
 import WWD from './wwd'
 
 export {
@@ -15,5 +16,6 @@ export {
     About, 
     WWD,
     Donate,
-    Contact
+    Contact,
+    MapContainer
 }

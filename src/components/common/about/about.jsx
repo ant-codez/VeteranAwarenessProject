@@ -27,14 +27,14 @@ function About(){
             <Header />
 
                 <div style = {{position : 'relative', textAlign : 'center', color : 'white'}}>
-                    <img src = {flag} style = {{height : '440px', width : '100%'}} />
+                    <img src = {flag} style = {{maxHeight : '33vh', width : '100%'}} />
                     <h1 style = {{position : 'absolute', top : '50%', left : '50%', transform : 'translate(-50%, -50%)'}}>ABOUT US</h1>
                 </div>
 
 
             <Container>
                 <Row className = 'justify-content-md-center'>
-                <Col xs = {6}>
+                <Col xs={{span: 12, order: 1}} md = {{span : 6, order : 2}} >
                         <div className = 'container-div'>
                         <h1>About Veteran Awareness Project</h1>
                         <p>For 22 years I have served my country as a combat pilot 
@@ -60,7 +60,7 @@ function About(){
                         </div>
                     </Col>
 
-                    <Col xs = {6}>
+                    <Col xs={{span: 12, order: 2}} md = {{span : 6, order : 2}} >
                         <Image
                         src = {VHTV}
                         className = 'center-img'
@@ -72,7 +72,7 @@ function About(){
             </Container>
 
             <Container>
-                <Row xs = {12}>
+                <Row xs>
                     <a href = 'https://www.army.mil' target = '_blank'>
                     <Image
                     src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Mark_of_the_United_States_Army.svg/1200px-Mark_of_the_United_States_Army.svg.png'
@@ -129,7 +129,7 @@ function About(){
 
             <Container>
                 <Row className = 'justify-content-md-center'>
-                <Col xs = {6}>
+                <Col xs={{span: 12, order: 1}} md = {{span : 6, order : 1}} >
                         <div className = 'container-div'>
                         <h1>Our Story</h1>
                         <p>We work directly with Veterans, Service Members and their Families … 
@@ -144,7 +144,7 @@ function About(){
                         </div>
                     </Col>
 
-                    <Col xs = {6}>
+                    <Col xs={{span: 12, order: 2}} md = {{span : 6, order : 2}} >
                         <Carousel style = {{marginTop : '50px' , marginBottom : '50px'}}>
                             <Carousel.Item>
                                 <img
@@ -182,11 +182,11 @@ function About(){
 
             <Container style = {{marginTop : '25px'}}>
 
-                <Row>
-                    <Col>
-                        <Image src ={shake}></Image>
+                <Row >
+                    <Col xs={{span: 12, order: 1}} md = {{span : 6, order : 2}} >
+                        <Image src ={shake} fluid></Image>
                     </Col>
-                    <Col>
+                    <Col xs={{span: 12, order: 2}} md = {{span : 6, order : 2}} >
                         <h1>Awards</h1>
                         <ul>
                             <li>CEO Veteran of the Year 2013 - California Assembly District 39</li>

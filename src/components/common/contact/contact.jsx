@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react';
 import Header from '../header'
 import Footer from '../footer'
 import Container from 'react-bootstrap/Container'
@@ -7,6 +7,8 @@ import Col from 'react-bootstrap/Col'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 import sparks from '../img/sparks.jpg'
+import { Map, GoogleApiWrapper } from 'google-maps-react';
+import MapContainer from '../mapContainer'
 import './contact.css'
 
 function Contact() {
@@ -20,7 +22,6 @@ function Contact() {
             </div>
 
             <Container style = {{marginTop : '50px' , marginBottom : '50px'}}>
-
                 <Row>
                     <Col>
                         <h1>Contact Details</h1>
@@ -31,7 +32,9 @@ function Contact() {
                             <li>Mailing Address : 4710 Sangamore Rd. #100N, Bethesda, MD 20816</li>
                         </ul>
 
-                        <h1>Connect with Us Today</h1>
+                        <MapContainer />
+
+                        <h1 style = {{marginTop : '25px'}}>Connect with Us Today</h1>
                         <a target = '_blank' href = 'https://www.facebook.com/VeteranAwareness'><i id = 'icon' className="fa fa-facebook-square"></i></a>
                         <a target = '_blank' href = 'https://www.twitter.com/VetAwareness'><i i id = 'icon'  className="fa fa-twitter"></i></a>
                         <a target = '_blank' href = 'https://www.linkedin.com/company/veteran-awareness-project'><i i id = 'icon'  className="fa fa-linkedin"></i></a>
@@ -69,18 +72,7 @@ function Contact() {
                         <a target = '_blank' href = 'https://www.calvet.ca.gov/WomenVets/Pages/California-Women-Veterans-Leadership-Council.aspx'><h2>CAL Womens Vets Leadership Council</h2></a>
                         </li>
                     </ul>
-
-                    <p>
-                    WARNING: CONFIDENTIALITY NOTICE – The information contained in this transmission may contain privileged 
-                    and confidential information, including patient information protected by federal ans state privacy laws. 
-                    It is intended only the use of the individual(s) named above. If you are not the intended recipient, you 
-                    are notified that any review, disclosure, copying, distribution, or the taking of any other action relevant 
-                    to the contents of this transmission are strictly prohibited. If you have received this transmission in error, 
-                    please notify The Veteran Awareness Project immediately at (703)947-7043 or contact the sender by reply and destroy 
-                    all copies of the original message.
-                    </p>
                 </Row>
-
             </Container>
             
 
@@ -88,5 +80,7 @@ function Contact() {
         </div>
     )
 }
+
+
 
 export default Contact
