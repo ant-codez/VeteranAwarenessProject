@@ -7,6 +7,7 @@ import Donate from './donate'
 import Contact from './contact'
 import MapContainer from './mapContainer'
 import WWD from './wwd'
+import CalendarPage from './CalendarPage'
 
 export {
     Header,
@@ -17,5 +18,6 @@ export {
     WWD,
     Donate,
     Contact,
-    MapContainer
+    MapContainer,
+    CalendarPage,
 }

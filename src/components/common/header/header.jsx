@@ -23,6 +23,7 @@ function Header() {
                 <Nav.Link href = '/about'>About</Nav.Link>
                 <Nav.Link href = '/What_we_do'>What We Do</Nav.Link>
                 <Nav.Link href = '/contact'>Contact Us</Nav.Link>
+                <Nav.Link href = '/calendar'>Calendar</Nav.Link>
                 <Nav.Link target = '_blank' href = 'https://www.paypal.me/selfcarefun'>Donate</Nav.Link>
                 <Nav.Link target = '_blank' href = 'https://www.etsy.com/people/pulmdq54?ref=hdr_user_menu-profile'>Shop</Nav.Link>
               </Nav>
